@@ -1,0 +1,1493 @@
+{
+  "info": {
+    "_postman_id": "ca7b0214-c9b3-4c9d-ae53-fcafead53aac",
+    "name": "ProConnect APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "36289371"
+  },
+  "item": [
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Client Register",
+          "id": "6243fab6-0d53-4a0d-bd26-d4da20e2788c",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Jahid Hasan\",\n  \"email\": \"usejfodr@gmail.com\",\n  \"password\": \"user36\",\n  \"role\": \"CLIENT\"\n\n\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/user/register",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "user",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Seller Register",
+          "id": "be2ae27c-f725-4f4d-99ea-fad7d24576e0",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Nishat Ahmed\",\n  \"email\": \"use6djr3@gmail.com\",\n  \"password\": \"user36\",\n  \"role\": \"SELLER\"\n\n\n\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/user/register",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "user",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET All Users",
+          "id": "bb722d14-c56f-4d3a-ac42-3150f7fc64fd",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTEzYTIyNDViODczNzg3NjRiZDE2M2UiLCJlbWFpbCI6InVzZXJAZ21haWwuY29tIiwicm9sZSI6IlBFUlNPTkFMIiwiaWF0IjoxNzYyOTI5MTI2LCJleHAiOjE3NjI5MjkxNDF9.Y-JrPvWH_BnF0l56VgM77GDoAdOdqfFWpg7mS8hAuhE",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/user/all-users",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "user",
+                "all-users"
+              ],
+              "query": [
+                {
+                  "key": "full_name",
+                  "value": "Arif Hasan",
+                  "disabled": true
+                },
+                {
+                  "key": "serchTerm",
+                  "value": "arif",
+                  "disabled": true
+                },
+                {
+                  "key": "sort",
+                  "value": "full_name",
+                  "disabled": true
+                },
+                {
+                  "key": "fields",
+                  "value": "email,full_name",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "limit",
+                  "value": "2",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Me",
+          "id": "8e0e1377-bf6a-4a1d-b04c-1dd7f2872567",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTEzYTIyNDViODczNzg3NjRiZDE2M2UiLCJlbWFpbCI6InVzZXJAZ21haWwuY29tIiwicm9sZSI6IlBFUlNPTkFMIiwiaWF0IjoxNzYyOTI5MTI2LCJleHAiOjE3NjI5MjkxNDF9.Y-JrPvWH_BnF0l56VgM77GDoAdOdqfFWpg7mS8hAuhE",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{url}}/auth/me",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "auth",
+                "me"
+              ],
+              "query": [
+                {
+                  "key": "full_name",
+                  "value": "Arif Hasan",
+                  "disabled": true
+                },
+                {
+                  "key": "serchTerm",
+                  "value": "arif",
+                  "disabled": true
+                },
+                {
+                  "key": "sort",
+                  "value": "full_name",
+                  "disabled": true
+                },
+                {
+                  "key": "fields",
+                  "value": "email,full_name",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "limit",
+                  "value": "2",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update User",
+          "id": "bee995b1-bc96-431f-af17-e8cfb28073a3",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTEzYTIyNDViODczNzg3NjRiZDE2M2UiLCJlbWFpbCI6InVzZXJAZ21haWwuY29tIiwicm9sZSI6IlBFUlNPTkFMIiwiaWF0IjoxNzYzMDQ2Njc3LCJleHAiOjE3NjMxMzMwNzd9.hGi5SsOrxCcCcn5kg2b6HFdyVumlLCjGHi8mG9ZrXYs",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "data",
+                  "value": "{\"name\": \"Arman  Mia \",\"bio\":\"hello how are yoy\"}",
+                  "type": "text"
+                },
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/home/arman/Desktop/ProConnect/ProConnect-Frontend/public/member4.png",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{url}}/user/update-profile",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "user",
+                "update-profile"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "7ba6b1e6-290b-4c8c-b6fe-bcf009e8c3a8"
+    },
+    {
+      "name": "Admins",
+      "item": [
+        {
+          "name": "Create Admin",
+          "id": "8c9c27f4-243a-4d26-a61b-5194209046dd",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTJkNWQ5MzJhNmVmOTU3YThhYmFjZmIiLCJlbWFpbCI6InN1cGVyQGdtYWlsLmNvbSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc2NDU4MDgxOSwiZXhwIjoxNzY0NjY3MjE5fQ.dxeCd1TUlucVzadoBXDX1vnR85Jb_Y-ABkx5v6AWChk",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Arif Hasan\",\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"user36\",\n  \"role\": \"ADMIN\"\n\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/user/create-admin",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "user",
+                "create-admin"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET All Admins",
+          "id": "2d38f0c9-cc0c-4566-91af-244ab0f641f3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTEzYTIyNDViODczNzg3NjRiZDE2M2UiLCJlbWFpbCI6InVzZXJAZ21haWwuY29tIiwicm9sZSI6IlBFUlNPTkFMIiwiaWF0IjoxNzYyOTI5MTI2LCJleHAiOjE3NjI5MjkxNDF9.Y-JrPvWH_BnF0l56VgM77GDoAdOdqfFWpg7mS8hAuhE",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/user/all-admins",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "user",
+                "all-admins"
+              ],
+              "query": [
+                {
+                  "key": "full_name",
+                  "value": "Arif Hasan",
+                  "disabled": true
+                },
+                {
+                  "key": "serchTerm",
+                  "value": "arif",
+                  "disabled": true
+                },
+                {
+                  "key": "sort",
+                  "value": "full_name",
+                  "disabled": true
+                },
+                {
+                  "key": "fields",
+                  "value": "email,full_name",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "limit",
+                  "value": "2",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Admin",
+          "id": "62432460-f940-44bb-8d57-ea48b86933e4",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTEzYTIyNDViODczNzg3NjRiZDE2M2UiLCJlbWFpbCI6InVzZXJAZ21haWwuY29tIiwicm9sZSI6IlBFUlNPTkFMIiwiaWF0IjoxNzYzMDQ2Njc3LCJleHAiOjE3NjMxMzMwNzd9.hGi5SsOrxCcCcn5kg2b6HFdyVumlLCjGHi8mG9ZrXYs",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "data",
+                  "value": "{\"name\": \"Arman  Mia \",\"bio\":\"hello how are yoy\"}",
+                  "type": "text"
+                },
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/home/arman/Desktop/ProConnect/ProConnect-Frontend/public/member4.png",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{url}}/user/delete-admin/69353e2136e970519f700979",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "user",
+                "delete-admin",
+                "69353e2136e970519f700979"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Admin Updated User info",
+          "id": "3e0dce59-8cc2-4fae-8f44-359bf947c9b2",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTEzNGIwNmM5ZDZmNWUwODIyNGM3MzAiLCJlbWFpbCI6InN1cGVyQGdtYWlsLmNvbSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc2Mjg4NTcwNywiZXhwIjoxNzYyOTcyMTA3fQ._jCmhKS-_coDRBW8r52hujzO5Zqq4zQaRBhdJVAcrnU",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \n    \"is_normal_verified\": true,\n     \"is_green_verified\": false,\n      \"is_active\": \"INACTIVE\",\n        \"full_name\": \"Arman \"\n       \n   \n\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/user/admin/update-user/69139d825b87378764bd1631",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "user",
+                "admin",
+                "update-user",
+                "69139d825b87378764bd1631"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "6863ca7d-821f-4dc8-90a8-09306fedd2f4"
+    },
+    {
+      "name": "Auths",
+      "item": [
+        {
+          "name": "User Login",
+          "id": "1669f6eb-04e4-48a9-8af0-573346f3698f",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\n    // super admin login\n    \"email\": \"superadmin@gmail.com\",\n    \"password\": \"superAdmin\"\n\n\n    // client  & seller login\n//   \"email\": \"seller@gmail.com\",\n//   \"password\": \"seller36\"\n\n//   \"email\": \"client@gmail.com\",\n//   \"password\": \"client36\"\n\n\n\n\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/auth/login",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Access Token  / Refresh Token",
+          "id": "27e5b07a-a5fe-4528-9181-e11d3d31cc30",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\n    // super admin login\n    // \"email\": \"super@gmail.com\",\n    // \"password\": \"superadmin123\"\n\n\n    // personal login\n      \"email\": \"user@gmail.com\",\n  \"password\": \"user36\"\n\n//   doctor loign\n//   \"email\": \"dr.sdfsat@example.com\",\n//   \"password\": \"DoctorPass123\"\n\n// public figure loign\n//   \"email\": \"actdor.jodddnfy@example.com\",\n//   \"password\": \"FigurePass123\"\n\n\n// organization login\n//   \"email\": \"orpdhadssd3nsage.admin@example.com\",\n//   \"password\": \"OrgPass123\"\n\n\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/auth/refresh-token",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "auth",
+                "refresh-token"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Logout",
+          "id": "e3dac782-68ce-49b6-8b8e-a6fda4533725",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\n    // super admin login\n    // \"email\": \"super@gmail.com\",\n    // \"password\": \"superadmin123\"\n\n\n    // personal login\n      \"email\": \"user@gmail.com\",\n  \"password\": \"user36\"\n\n//   doctor loign\n//   \"email\": \"dr.sdfsat@example.com\",\n//   \"password\": \"DoctorPass123\"\n\n// public figure loign\n//   \"email\": \"actdor.jodddnfy@example.com\",\n//   \"password\": \"FigurePass123\"\n\n\n// organization login\n//   \"email\": \"orpdhadssd3nsage.admin@example.com\",\n//   \"password\": \"OrgPass123\"\n\n\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/auth/logout",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "auth",
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Change Password",
+          "id": "56dafc41-ceba-4e7c-bdf6-37ada187b87d",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTEzYTIyNDViODczNzg3NjRiZDE2M2UiLCJlbWFpbCI6InVzZXJAZ21haWwuY29tIiwicm9sZSI6IlBFUlNPTkFMIiwiaWF0IjoxNzYyOTUxMzU2LCJleHAiOjE3NjMwMzc3NTZ9.WLNUWa2Of26kWQXg7cjYj6tQU4igZjt76qRVaI9NdDU",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\n\n  \"oldPassword\": \"user36\",\n  \"newPassword\":\"super36\"\n\n\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/auth/change-password",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "auth",
+                "change-password"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Forgot Password",
+          "id": "0f31063f-aac9-416b-93ac-2e54528f3d26",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTEzYTIyNDViODczNzg3NjRiZDE2M2UiLCJlbWFpbCI6InVzZXJAZ21haWwuY29tIiwicm9sZSI6IlBFUlNPTkFMIiwiaWF0IjoxNzYyOTUxMzU2LCJleHAiOjE3NjMwMzc3NTZ9.WLNUWa2Of26kWQXg7cjYj6tQU4igZjt76qRVaI9NdDU",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\n\n  \"email\": \"arman.miaa36@gmail.com\"\n\n\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/auth/forgot-password",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "auth",
+                "forgot-password"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Reset Password",
+          "id": "ea2225ed-3ea3-4705-bec2-6beaa958c59b",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTFjYmEzODRkZjUwODEwZjQ2MGM4M2MiLCJlbWFpbCI6Im1kYXJtYW4zNjU1MDZAZ21haWwuY29tIiwicm9sZSI6IlBFUlNPTkFMIiwiaWF0IjoxNzYzNDkyODE1LCJleHAiOjE3NjM0OTM0MTV9.ndryoLtSjbP9CSoytX__yhjgtPg0WXtyTsoXRTbVwFY",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\n\"id\":\"691cba384df50810f460c83c\",\n  \"newPassword\": \"user3d\"\n\n\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/auth/reset-password",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "auth",
+                "reset-password"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "4c6f2dd3-e470-4b23-bb69-e0cae84f2332"
+    },
+    {
+      "name": "Payments",
+      "item": [
+        {
+          "name": "Payment Initial",
+          "id": "af8709b4-d7eb-4c20-b7c7-f06d1859b7e1",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/payment/init-payment/6932f510cc70d99828c9d0e8",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "payment",
+                "init-payment",
+                "6932f510cc70d99828c9d0e8"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Invoice Download URL",
+          "id": "034345e6-36fe-4faa-8ab1-a3902116554e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"amount\": 500,\n  \"transactionId\": \"TXN-12345\",\n  \"name\": \"Test User\",\n  \"email\": \"test@example.com\",\n  \"phoneNumber\": \"01700000000\",\n  \"address\": \"Dhaka\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/payment/invoice/691de71123ac9ac051b315f9",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "payment",
+                "invoice",
+                "691de71123ac9ac051b315f9"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "fb396699-908b-44a4-a440-2b5f33860918"
+    },
+    {
+      "name": "Transaction",
+      "item": [
+        {
+          "name": "Get My Transactions (Seller/Client)",
+          "id": "fe499b1f-8d3a-445e-8051-26dfbd85dc36",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/transaction/my-history",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "transaction",
+                "my-history"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Transaction for Admin",
+          "id": "a6594d52-5997-423a-a602-055552e7742e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/transaction/all-history",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "transaction",
+                "all-history"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Seller Financial Summary (Seller Only)",
+          "id": "f4c77b8d-9700-4cc7-87e1-d7b5b8204f53",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"amount\": 500,\n  \"transactionId\": \"TXN-12345\",\n  \"name\": \"Test User\",\n  \"email\": \"test@example.com\",\n  \"phoneNumber\": \"01700000000\",\n  \"address\": \"Dhaka\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/transaction/earnings/summary",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "transaction",
+                "earnings",
+                "summary"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Withdrawal (Seller Only)",
+          "id": "9da8927b-f93f-4055-8ada-76544be2dbfa",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"amount\": 50\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/transaction/withdrawal",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "transaction",
+                "withdrawal"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "c7806edc-21c2-409f-87f6-4bc7a5cf53e6"
+    },
+    {
+      "name": "Suport & Message",
+      "item": [
+        {
+          "name": "Message Create",
+          "id": "deb9c9d7-aaff-416f-a841-9c49f8c6655b",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"email\": \"john@example.com\",\n  \"phone\": \"+1555123456\",\n  \"issueType\": \"support\",\n  \"message\": \"I need help with my account.\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/message/create-message",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "message",
+                "create-message"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Message Create Copy",
+          "id": "0bb807ed-c164-4703-a4cb-8d5b551f6b42",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"email\": \"john@example.com\",\n  \"phone\": \"+1555123456\",\n  \"issueType\": \"support\",\n  \"message\": \"I need help with my account.\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/message/all",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "message",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Message Create Copy 2",
+          "id": "b13b9243-4e83-4abd-8139-4f43f9fcc76e",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"email\": \"john@example.com\",\n  \"phone\": \"+1555123456\",\n  \"issueType\": \"support\",\n  \"message\": \"I need help with my account.\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/message/693048381d536ec5870a1dd7",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "message",
+                "693048381d536ec5870a1dd7"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "ed6ec9fa-4c66-43e6-9ea0-195dc889b61f"
+    },
+    {
+      "name": "Services",
+      "item": [
+        {
+          "name": "Create Service",
+          "id": "71c9fd2b-422a-48a4-8b63-7e825792ab73",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "data",
+                  "value": "{\n  \"title\": \"Custom MERN Stack Dashboard Development\",\n  \"description\": \"I will build a secure and scalable admin dashboard with real-time data visualization for your busineswill build a secure and scalable admin dashboard with real-time data visualization for your busineswill build a secure and scalable admin dashboard with real-time data visualization for your busineswill build a secure and scalable admin dashboard with real-time data visualization for your business.\",\n  \"price\": 100,\n  \"deliveryTime\": 10,\n  \"category\": \"Web Development\",\n  \"tags\": [\"MERN\", \"Dashboard\", \"Admin Panel\", \"MongoDB\"],\n  \"profileImage\": \"https://api.yourdomain.com/uploaded/dashboard_image_url.jpg\" \n}",
+                  "type": "text"
+                },
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/home/arman/Pictures/Screenshots/Screenshot from 2025-08-08 19-44-31.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{url}}/service",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "service"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Service  (Public)",
+          "id": "30fdd88e-81d1-4fb7-98e4-030253d7a7aa",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "data",
+                  "value": "{\n  \"title\": \"Custom MERN Stack Dashboard Development\",\n  \"description\": \"I will build a secure and scalable admin dashboard with real-time data visualization for your business.\",\n  \"price\": 450,\n  \"deliveryTime\": 10,\n  \"category\": \"Web Development\",\n  \"tags\": [\"MERN\", \"Dashboard\", \"Admin Panel\", \"MongoDB\"],\n  \"profileImage\": \"https://api.yourdomain.com/uploaded/dashboard_image_url.jpg\" \n}",
+                  "type": "text"
+                },
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/home/arman/Desktop/ProConnect/ProConnect-Frontend/public/cta.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{url}}/service",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "service"
+              ],
+              "query": [
+                {
+                  "key": "category",
+                  "value": "Cyber Security",
+                  "disabled": true
+                },
+                {
+                  "key": "searchTerm",
+                  "value": "nisi ",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "limit",
+                  "value": "4",
+                  "disabled": true
+                },
+                {
+                  "key": "sort",
+                  "value": "price",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Service (Seller)",
+          "id": "90a7ed18-b00c-432b-9719-44ace802b9fc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "data",
+                  "value": "{\n  \"title\": \"Custom MERN Stack Dashboard Development\",\n  \"description\": \"I will build a secure and scalable admin dashboard with real-time data visualization for your business.\",\n  \"price\": 450,\n  \"deliveryTime\": 10,\n  \"category\": \"Web Development\",\n  \"tags\": [\"MERN\", \"Dashboard\", \"Admin Panel\", \"MongoDB\"],\n  \"profileImage\": \"https://api.yourdomain.com/uploaded/dashboard_image_url.jpg\" \n}",
+                  "type": "text"
+                },
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/home/arman/Desktop/ProConnect/ProConnect-Frontend/public/cta.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{url}}/service/my-services",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "service",
+                "my-services"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Single Service",
+          "id": "e2a8fce7-0255-4655-9e48-fc0828d71411",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "data",
+                  "value": "{\n  \"title\": \"Custom MERN Stack Dashboard Development\",\n  \"description\": \"I will build a secure and scalable admin dashboard with real-time data visualization for your business.\",\n  \"price\": 450,\n  \"deliveryTime\": 10,\n  \"category\": \"Web Development\",\n  \"tags\": [\"MERN\", \"Dashboard\", \"Admin Panel\", \"MongoDB\"],\n  \"profileImage\": \"https://api.yourdomain.com/uploaded/dashboard_image_url.jpg\" \n}",
+                  "type": "text"
+                },
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/home/arman/Desktop/ProConnect/ProConnect-Frontend/public/cta.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{url}}/service/6939691afdcd8593c3c3bef7",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "service",
+                "6939691afdcd8593c3c3bef7"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Servise",
+          "id": "66f28b3a-b70a-4875-a492-a459fe423822",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "data",
+                  "value": "{\n  \"title\": \"Custom MERN Stack Dashboard Development\",\n  \"description\": \"I will build a secure and scalable admin dashboard with real-time data visualization for your business.\",\n  \"price\": 47777777777777750,\n  \"deliveryTime\": 10,\n  \"category\": \"Web Development\",\n  \"tags\": [\"MERN\", \"Dashboard\", \"Admin Panel\", \"MongoDB\"],\n  \"profileImage\": \"https://api.yourdomain.com/uploaded/dashboard_image_url.jpg\" \n}",
+                  "type": "text"
+                },
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/home/arman/Desktop/ProConnect/ProConnect-Frontend/public/hero.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{url}}/service/693157d966f9f19356745236",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "service",
+                "693157d966f9f19356745236"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Servise",
+          "id": "1ec74664-108e-4cdf-bcdd-dfe2d52c2b7a",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "data",
+                  "value": "{\n  \"title\": \"Custom MERN Stack Dashboard Development\",\n  \"description\": \"I will build a secure and scalable admin dashboard with real-time data visualization for your business.\",\n  \"price\": 450,\n  \"deliveryTime\": 10,\n  \"category\": \"Web Development\",\n  \"tags\": [\"MERN\", \"Dashboard\", \"Admin Panel\", \"MongoDB\"],\n  \"profileImage\": \"https://api.yourdomain.com/uploaded/dashboard_image_url.jpg\" \n}",
+                  "type": "text"
+                },
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/home/arman/Desktop/ProConnect/ProConnect-Frontend/public/cta.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{url}}/service/6932cad9cc70d99828c9cf39",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "service",
+                "6932cad9cc70d99828c9cf39"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "6ded0a3e-8821-4b25-a74a-826f61fee4ee"
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "New Request",
+          "id": "c3b8003f-2371-4e62-b484-2f103d6ffd46",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"serviceId\": \"6932caafcc70d99828c9cf2a\"\n                  \n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/order",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "order"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Order",
+          "id": "29747e48-7139-48f0-9f06-82bbd24ab192",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"serviceId\": \"693139aeae802cb70aeb2680\"\n                  \n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/order",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "order"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Single Order",
+          "id": "a4a52c4e-d313-4222-b20c-189e87f2a1d9",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"serviceId\": \"693139aeae802cb70aeb2680\"\n                  \n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/order/693334acf9f9bae2d635670b",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "order",
+                "693334acf9f9bae2d635670b"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update order Status",
+          "id": "9ae14379-8820-422e-bb34-d23f4a07983a",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\n//   \"orderStatus\": \"ACCEPTED\"\n// \"deliveryDate\": \"2025-12-30T10:00:00Z\"\n// \"IN_PROGRESS\": \"IN_PROGRESS\"\n//   \"orderStatus\": \"DELIVERED\"\n// \"orderStatus\": \"COMPLETED\"\n\"orderStatus\": \"CANCELLED\"\n// \"cancellationReason\": \"Client decided not to proceed.\"\n\n}\n\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/order/6931f2604d6b745c64163ef0",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "order",
+                "6931f2604d6b745c64163ef0"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "9a707552-1ef9-4bd5-9a42-acf7ab7a4ec2"
+    },
+    {
+      "name": "Reviews",
+      "item": [
+        {
+          "name": "Ceate Review",
+          "id": "8e55309f-e38f-4c15-bc38-7c32c7e5d696",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orderId\": \"6931d9b365adf78cb4a7d8fa\", \n  \"rating\": 5, \n  \"comment\": \"The service was excellent, delivered on time and exceeded expectations.\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/review",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "review"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Reviews by Service (Public)",
+          "id": "40406467-8cc8-475a-a4d5-430e24cc8b6c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orderId\": \"6931d9b365adf78cb4a7d8fa\", \n  \"rating\": 5, \n  \"comment\": \"The service was excellent, delivered on time and exceeded expectations.\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/review/service/69302b860fa70bd001ea7d4e",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "review",
+                "service",
+                "69302b860fa70bd001ea7d4e"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Seller’s Reviews (Seller only)",
+          "id": "52cf70e2-aeda-4503-b3ad-7b66da329f3f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orderId\": \"6931d9b365adf78cb4a7d8fa\", \n  \"rating\": 5, \n  \"comment\": \"The service was excellent, delivered on time and exceeded expectations.\"\n}"
+            },
+            "url": {
+              "raw": "{{url}}/review/seller/69302b860fa70bd001ea7d4e",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "review",
+                "seller",
+                "69302b860fa70bd001ea7d4e"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get My Reviews (Client only)",
+          "id": "d625f918-5821-449f-9607-6bca36de2772",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orderId\": \"6931d9b365adf78cb4a7d8fa\", \n  \"rating\": 5, \n  \"comment\": \"The service was excellent, delivered on time and exceeded expectations.\"\n}"
+            },
+            "url": {
+              "raw": "{{url}}/review/my-reviews",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "review",
+                "my-reviews"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Reviews (Admin / Super Admin only)",
+          "id": "35de57d2-56fe-4b62-9554-1ef03e35e174",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orderId\": \"6931d9b365adf78cb4a7d8fa\", \n  \"rating\": 5, \n  \"comment\": \"The service was excellent, delivered on time and exceeded expectations.\"\n}"
+            },
+            "url": {
+              "raw": "{{url}}/review/admin/all",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "review",
+                "admin",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "7dfc1027-42d5-430e-a1de-3ed21a014f3c"
+    },
+    {
+      "name": "State (admin)",
+      "item": [
+        {
+          "name": "Get State for Admin Dashboard",
+          "id": "2d089cd2-da7a-451b-8d93-a4c387a3cfb5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\n    // super admin login\n    // \"email\": \"super@gmail.com\",\n    // \"password\": \"super36\"\n\n\n    // client  & seller login\n  \"email\": \"arman.miaa36@gmail.com\",\n  \"password\": \"user36\"\n\n\n\n}"
+            },
+            "url": {
+              "raw": "{{url}}/state/dashboard",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "state",
+                "dashboard"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "c1bef6fc-e17d-49ed-972d-355d0599324f"
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "8ea2a80a-e117-4c2d-a9e8-a33f381b17b4",
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "0477bd07-3816-4739-ae71-7e5d290233a5",
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "5d123944-f71e-4dc7-96cc-b6733b095f8a",
+      "key": "url",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}
