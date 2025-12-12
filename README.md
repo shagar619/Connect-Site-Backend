@@ -1,56 +1,38 @@
 
 
-# 🚀 ProConnect Backend
+# 🚀 Connect Site Backend
+Backend for ProConnect - A Freelance Service Marketplace Application. It provides RESTful APIs for user authentication, service management, order processing, payment integration, reviews, admin dashboard, wallet management, messaging, and transaction tracking.
 
-**ProConnect** is a modern marketplace application connecting clients with service providers. This repository hosts the **robust and scalable Backend Service**, built using **TypeScript, Express, and MongoDB**.
 
----
 
 ## 🔗 Live Demo & Source Code
 
-| Name                 | Type                | Link                                                                     |
-| -------------------- | ------------------- | ------------------------------------------------------------------------ |
-| **Live Application** | Frontend Deployment | [Frontend Live](https://pro-connect-frontend.vercel.app)                 |
-| **Backend API**      | API Deployment      | [Backend Live](https://pro-connect-backend.vercel.app)                   |
-| **Frontend Source**  | GitHub Repository   | [ProConnect-Frontend](https://github.com/arman-miaa/ProConnect-Frontend) |
-| **Backend Source**   | GitHub Repository   | [ProConnect-Backend](https://github.com/arman-miaa/ProConnect-Backend)   |
+* **Frontend Live Demo:** [Connect Live](https://proconnect-app.vercel.app)
+* **Backend Live Demo:** [Connect API](https://proconnect-backend.vercel.app/api/v1)
+* **Frontend Source Code:** [Connect Frontend](https://github.com/shagar619/Connect-Site-Frontend)
+* **Backend Source Code:** [Connect Backend](https://github.com/shagar619/Connect-Site-Backend)
 
----
 
 ## 🛠️ Tech Stack
 
-| Category            | Technology          | Version       | Purpose                      |
-| ------------------- | ------------------- | ------------- | ---------------------------- |
-| **Language**        | TypeScript          | 5.8.3         | Type safety & scalability    |
-| **Runtime**         | Node.js             | -             | JavaScript runtime           |
-| **Framework**       | Express.js          | 5.1.0         | Web framework                |
-| **Database**        | MongoDB             | -             | NoSQL document DB            |
-| **ORM**             | Mongoose            | 8.16.1        | MongoDB modeling             |
-| **Validation**      | Zod                 | 3.25.74       | Schema validation            |
-| **Authentication**  | JWT & Bcryptjs      | 9.0.2 & 3.0.3 | Secure login & hashing       |
-| **Payment Gateway** | SSLCommerz          | -             | Payment processing           |
-| **File Upload**     | Cloudinary & Multer | 2.8.0 & 2.0.2 | File storage & upload        |
-| **Email Service**   | Nodemailer          | 7.0.11        | Email sending                |
-| **HTTP Client**     | Axios               | 1.13.2        | API requests                 |
-| **Utilities**       | CORS, Cookie-Parser | -             | Security & cookie management |
+* **Runtime:** Node.js
+* **Framework:** Express.js
+* **Database:** MongoDB with Mongoose
 
----
 
 ## ✨ Key Features
 
-* **🔐 User Authentication & Authorization:** JWT-based login, registration, role-based access (Admin, Seller, Client)
-* **🛠️ Service Management:** Full CRUD operations for services with validation & error handling
-* **📦 Order Processing:** Place, track, and manage orders
-* **💳 Payment Gateway Integration:** SSLCommerz support, transaction tracking & status management
-* **⭐ Review & Rating System:** Leave reviews, ratings with moderation support
-* **📊 Admin Dashboard:** Analytics, user & transaction management, report oversight
-* **💰 Wallet & Withdrawal:** Wallet tracking, earnings withdrawal with transaction history
-* **✉️ Messaging System:** User-to-user messaging for communication and support
-* **📑 Transaction Tracking:** Complete financial audit trail
-* **⚡ Robust Error Handling:** Global error handler, custom AppError, Mongoose & Zod validation support
-* **🧩 Custom Middleware:** Authentication checks, request validation, error & CORS handling
+* User Authentication (JWT)
+* Service Listings & Management
+* Order Processing & Tracking
+* Payment Integration (SSLCommerz)
+* Ratings & Reviews
+* Admin Dashboard & Analytics
+* Wallet & Transaction Management
+* Messaging System
+* RESTful API Design
+* Input Validation with Zod
 
----
 
 ## 📂 Project Structure
 
@@ -97,8 +79,8 @@ src/
 ### 1️⃣ Installation
 
 ```bash
-git clone https://github.com/arman-miaa/ProConnect-Backend.git
-cd ProConnect-Backend
+git clone https://proconnect-backend.vercel.app/api/v1
+cd Connect-Backend
 pnpm install   # or npm install
 ```
 
@@ -176,7 +158,7 @@ pnpm start
 
 ## 👤 Author
 
-**Arman Mia** - [GitHub](https://github.com/arman-miaa)
+**Shagar Ahmed** - [GitHub](https://github.com/shagar619)
 
 ---
 
