@@ -7,8 +7,8 @@ Backend for ProConnect - A Freelance Service Marketplace Application. It provide
 
 ## 🔗 Live Demo & Source Code
 
-* **Frontend Live Demo:** [Connect Live](https://proconnect-app.vercel.app)
-* **Backend Live Demo:** [Connect API](https://proconnect-backend.vercel.app/api/v1)
+* **Frontend Live Demo:** [Connect Live](https://pro-connect-frontend.vercel.app)
+* **Backend Live Demo:** [Connect API](https://pro-connect-backend.vercel.app)
 * **Frontend Source Code:** [Connect Frontend](https://github.com/shagar619/Connect-Site-Frontend)
 * **Backend Source Code:** [Connect Backend](https://github.com/shagar619/Connect-Site-Backend)
 
